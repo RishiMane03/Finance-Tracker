@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+
+.my-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem auto;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.my-card{
+    box-shadow: var(--shadow);
+    font-family: 'Montserrat', sans-serif;
+    margin: 2rem;
+    border-radius: 0.5rem;
+    min-width: 300px;
+    flex: 1;
+}
+
+.my-card p{
+    margin: 0;
+}
+
+.ant-card-head-title{
+    font-weight: 600;
+
+}
+
+.currentBalance{
+    background-color: #a7a7a7;
+    color: #c7ff45;
+}
+
+/* Credit Card */
+.container {
+  /* border: 2px solid black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.title {
+  text-align: center;
+  margin-top: 55px;
+  color: #fff;
+  font-size: 25px;
+}
+
+.card {
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  width: 380px;
+  height: 220px;
+  padding: 18px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  border-radius: 16px;
+  border: solid 4px rgba(255, 255, 255, 0.1);
+
+  background-image: url("https://images.unsplash.com/photo-1522441815192-d9f04eb0615c?q=80&w=1527&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-position: center;
+  background-size: cover;
+
+  box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px,
+    rgba(255, 255, 255, 0.12) 0px -12px 30px,
+    rgba(255, 255, 255, 0.12) 0px 4px 6px,
+    rgba(255, 255, 255, 0.17) 0px 12px 13px,
+    rgba(233, 122, 122, 0.09) 0px -3px 5px;
+}
+
+.container h1 {
+  font-size: 15px;
+}
+
+.container .totalMoney{
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+.container h2 {
+  font-size: 16px;
+}
+
+.container h3 {
+  font-size: 11px;
+}
+
+.container p {
+  font-size: 8px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.top,
+.bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top img {
+  width: 20px;
+}
+
+.brand {
+  height: 20px;
+  mix-blend-mode: overlay;
+}
+
+.infos {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.infos--bottom {
+  display: flex;
+  gap: 20px;
+}
+
+.card-number {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}

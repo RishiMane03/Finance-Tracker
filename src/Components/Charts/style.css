@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+
+.charts-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    height: auto;
+    margin: 1.7rem;
+}
+
+.lineChart{
+    margin-left: 20px;
+    width: 60%;
+    box-shadow: var(--shadow);
+    padding: 1.2rem;
+    border-radius: 10px;
+}
+
+.buttonData{
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buttonData button{
+    padding: 1rem 3.4rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: var(--black);
+    color: var(--theme);
+    border: 1px solid var(--theme);
+    border-radius: 4px;
+}
+
+.buttonData button.active {
+    background-color: var(--theme);
+    color: var(--black);
+}
+
+.lineChartSetUp{
+    margin-bottom: 20px;
+}
+
+
+.pieChart{
+    box-shadow: var(--shadow);
+    padding: 1.2rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 35%;
+}
+
+.buttonPieData{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid crimson; */
+    width: 100%;
+}
+
+.buttonPieData p{
+    color: var(--black);
+    font-size: 22px;
+}
+
+.buttonPieData button{
+    color: coral;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+    border: none;
+    border-left: 1px solid coral;
+    padding-left: 8px;
+}
+
+.buttonPieData button:hover{
+    color: rgb(253, 74, 9);
+}
+
+/* media query */
+
+@media (max-width: 1130px) {
+    .charts-wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .buttonData{
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+
+    .lineChart{
+        width: 1000px;
+    }
+
+    .pieChart{
+        width: 600px;
+    }
+}
+
+@media (max-width: 1020px) {
+
+    .lineChart{
+        width: 800px;
+    }
+
+    .buttonData{
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+}
+
+@media (max-width: 890px){
+    .lineChart{
+        width: 700px;
+    }
+} 
+
+@media (max-width: 750px){
+    .lineChart{
+        width: 600px;
+    }
+} 
+
+@media (max-width: 640px){
+    .lineChart{
+        width: 500px;
+    }
+
+    .pieChart{
+        width: 400px;
+    }
+} 
+
+@media (max-width: 560px){
+    .lineChart{
+        width: 400px;
+    }
+} 
+
+@media (max-width: 500px){
+    .pieChart{
+        width: 350px;
+    }
+} 
+
+@media (max-width: 460px){
+    .lineChart{
+        width: 340px;
+    }
+} 
